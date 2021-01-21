@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[WIP] Sourcetrail"
+title: "Trying Sourcetrail, a Tool to visualize C++ source code"
 date:   2021-01-21 17:00:00 +0900
 categories: C++
 ---
