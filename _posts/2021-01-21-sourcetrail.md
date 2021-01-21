@@ -18,7 +18,16 @@ SOLID에 충실한 20줄 미만의 많은 자잘한 클래스가 나오는 코�
 - C++ 을 선택하고 두가지 중 하나로 한다.
   - CMake 프로젝트인 경우 `CMAKE_EXPORT_COMPILE_COMMANDS` flag 를 사용해서 `compile_commands.json` 생성해서 하는 방법
   - 또는 empty project를 선택해서 수작업으로 소스 디렉토리, include 디렉토리 등을 넣는 방법.
-- 야심한 밤이라, 귀찮아서 후자로 일단 해봤다.
+- 야심한 밤이라, 귀찮아서 후자로 일단 해봤다. global include directory 등도.. Linux 프로젝트인데 지금 Windows 환경이라 패스.
 - source code는 회사에서 작년에 진행했던 아래 프로젝트를 사용.
   - https://github.com/Samsung/ONE
-- Crete 를 했더니 indexing을 하고 에러가 막 나오는데, (예를 들어 헤더를 못찾겠어.. 등) 걍 무시.
+- Create 를 했더니 indexing을 하고 에러가 막 나오는데, (예를 들어 헤더를 못찾겠어.. 등) 걍 무시.
+- 에러가 나는 클래스나 파일들은 제대로 로드하지 못하는데, 예를 들어 <cassert> 를 못찾겠어... 뭐 이런 에러들이다. 제대로 하면 다 로드될 것 같다.
+
+## 스크린샷
+
+## 장점
+- dependency 가 매우 잘 나타나고 코드레벨에서도 잘 보여준다.
+- 코드가 같이 보이는것 참 좋은 거 같다.
+- 대신 그림 부분이 확확 바뀌어 좀 정신이 없긴하다. But, backspace 를 누르면 이전 화면으로 간다.
+- 내일 Linux 용으로 받아서 다시 해봐야 겠다.
